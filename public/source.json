@@ -3,7 +3,7 @@
   "identifier": "sh.celia.source",
   "subtitle": "Apps from celia-sh",
   "description": "An AltSource feed for apps maintained by the celia-sh organization.",
-  "iconURL": "https://sideload.celia.sh/assets/CELIA.svg",
+  "iconURL": "https://sideload.celia.sh/assets/CELIA.png",
   "sourceURL": "https://sideload.celia.sh/source.json",
   "website": "https://sideload.celia.sh",
   "featuredApps": [
@@ -14,7 +14,7 @@
     {
       "name": "Novella",
       "bundleIdentifier": "sh.celia.novella",
-      "developerName": "celia-sh",
+      "developerName": "CELIA",
       "subtitle": "轻书架第三方客户端",
       "description": "使用 React Native 构建的轻书架第三方客户端，面向 iOS、iPadOS。",
       "localizedDescription": "使用 React Native 构建的轻书架第三方客户端，面向 iOS、iPadOS。",
@@ -34,7 +34,7 @@
     {
       "name": "Hana",
       "bundleIdentifier": "sh.celia.hana",
-      "developerName": "celia-sh",
+      "developerName": "CELIA",
       "subtitle": "Hanime1 第三方客户端",
       "description": "使用 SwiftUI 构建的 Hanime1 客户端，面向 iOS、iPadOS 与 macOS。",
       "localizedDescription": "使用 SwiftUI 构建的 Hanime1 客户端，面向 iOS、iPadOS 与 macOS。",
