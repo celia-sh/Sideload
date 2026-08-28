@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  deployments: write
 
 concurrency:
   group: sideload-production
@@ -22,13 +23,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: 24
           cache: npm
@@ -68,10 +69,10 @@ jobs:
 
       - name: Deploy to Cloudflare Pages
         if: steps.source.outputs.changed == 'true' || github.event_name == 'push' || github.event_name == 'workflow_dispatch'
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: sideload
-          directory: dist
+          wranglerVersion: "latest"
+          command: pages deploy dist --project-name=sideload
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
