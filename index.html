@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="supported-color-schemes" content="dark" />
+    <style>
+      :root {
+        color-scheme: dark;
+        background-color: #000;
+      }
+    </style>
+    <meta
+      name="description"
+      content="CELIA Source — an AltSource feed for apps from celia-sh."
+    />
+    <title>Source</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/chart-cohort.svg" />
+    <link rel="mask-icon" href="/assets/chart-cohort.svg" color="#ffffff" />
+    <link rel="preload" as="image" href="/assets/CELIA.svg" />
+    <link rel="preload" as="image" href="/assets/SIDELOAD.svg" />
+    <link rel="preload" as="image" href="/assets/badges/feather.svg" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="landing" aria-labelledby="site-title">
+      <section class="hero" aria-label="CELIA Source">
+        <div class="brand-lockup">
+          <h1 id="site-title" class="visually-hidden">CELIA Sideload</h1>
+          <div class="brand-lockup__wordmark" aria-hidden="true">
+            <img
+              class="brand-lockup__celia"
+              src="/assets/CELIA.svg"
+              alt=""
+              width="253"
+              height="69"
+            />
+            <img
+              class="brand-lockup__sideload"
+              src="/assets/SIDELOAD.svg"
+              alt=""
+              width="452"
+              height="70"
+            />
+          </div>
+          <div
+            class="brand-lockup__timer"
+            role="presentation"
+            aria-hidden="true"
+          >
+            <span></span>
+          </div>
+          <p class="visually-hidden">
+            The progress bar marks the interval between badge changes. Choose a
+            badge to add CELIA Source to your sideloading app.
+          </p>
+        </div>
+
+        <div
+          class="badge-carousel"
+          role="region"
+          aria-label="Add CELIA Source"
+        >
+          <a
+            class="platform-badge platform-badge--feather"
+            href="feather://source/https://sideload.celia.sh/source.json"
+            aria-label="Add CELIA Source to Feather"
+          >
+            <img
+              src="/assets/badges/feather.svg"
+              alt="Get it on Feather"
+              width="1001"
+              height="301"
+            />
+          </a>
+          <a
+            class="platform-badge platform-badge--altstore"
+            href="altstore://source?url=https%3A%2F%2Fsideload.celia.sh%2Fsource.json"
+            aria-label="Add CELIA Source to AltStore"
+          >
+            <img
+              src="/assets/badges/altstore.svg"
+              alt="Get it on AltStore"
+              width="1001"
+              height="301"
+            />
+          </a>
+          <a
+            class="platform-badge platform-badge--sidestore"
+            href="sidestore://source?url=https%3A%2F%2Fsideload.celia.sh%2Fsource.json"
+            aria-label="Add CELIA Source to SideStore"
+          >
+            <img
+              src="/assets/badges/sidestore.svg"
+              alt="Get it on SideStore"
+              width="1001"
+              height="301"
+            />
+          </a>
+        </div>
+
+        <p class="visually-hidden">
+          CELIA Source provides apps from the celia-sh organization.
+          If the badge does not open an app, use the source URL:
+          https://sideload.celia.sh/source.json
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
