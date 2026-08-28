@@ -17,6 +17,7 @@
       "developerName": "celia-sh",
       "subtitle": "轻书架第三方客户端",
       "description": "使用 React Native 构建的轻书架第三方客户端，面向 iOS、iPadOS。",
+      "localizedDescription": "使用 React Native 构建的轻书架第三方客户端，面向 iOS、iPadOS。",
       "iconURL": "https://sideload.celia.sh/assets/apps/novella.png",
       "tintColor": "#2E2E2E",
       "versions": [
@@ -36,6 +37,7 @@
       "developerName": "celia-sh",
       "subtitle": "Hanime1 第三方客户端",
       "description": "使用 SwiftUI 构建的 Hanime1 客户端，面向 iOS、iPadOS 与 macOS。",
+      "localizedDescription": "使用 SwiftUI 构建的 Hanime1 客户端，面向 iOS、iPadOS 与 macOS。",
       "iconURL": "https://sideload.celia.sh/assets/apps/hana.png",
       "tintColor": "#9F203A",
       "versions": [
