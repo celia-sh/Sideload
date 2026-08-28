@@ -3,6 +3,7 @@
   "identifier": "sh.celia.source",
   "subtitle": "Apps from celia-sh",
   "description": "An AltSource feed for apps maintained by the celia-sh organization.",
+  "iconURL": "https://sideload.celia.sh/assets/CELIA.svg",
   "sourceURL": "https://sideload.celia.sh/source.json",
   "website": "https://sideload.celia.sh",
   "featuredApps": [
