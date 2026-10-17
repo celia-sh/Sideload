@@ -16,8 +16,8 @@
       "bundleIdentifier": "sh.celia.novella",
       "developerName": "CELIA",
       "subtitle": "轻书架第三方客户端",
-      "description": "使用 React Native 构建的轻书架第三方客户端，面向 iOS、iPadOS。",
-      "localizedDescription": "使用 React Native 构建的轻书架第三方客户端，面向 iOS、iPadOS。",
+      "description": "使用 React Native 构建的轻书架客户端，面向 iOS、iPadOS。",
+      "localizedDescription": "使用 React Native 构建的轻书架客户端，面向 iOS、iPadOS。",
       "iconURL": "https://sideload.celia.sh/assets/apps/novella.png",
       "tintColor": "#2E2E2E",
       "versions": [
