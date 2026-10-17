@@ -17,8 +17,8 @@
       content="CELIA Source — an AltSource feed for apps from celia-sh."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="CELIA Source" />
-    <meta property="og:title" content="CELIA Source" />
+    <meta property="og:site_name" content="CELIA" />
+    <meta property="og:title" content="Sideload / CELIA" />
     <meta
       property="og:description"
       content="A source for apps by celia-sh."
@@ -40,97 +40,28 @@
       content="CELIA Sideload with AltStore, SideStore, and Feather badges"
     />
     <meta name="twitter:card" content="summary_large_image" />
-    <title>Source</title>
+    <title>Sideload / CELIA</title>
     <link rel="icon" type="image/svg+xml" href="/assets/chart-cohort.svg" />
     <link rel="mask-icon" href="/assets/chart-cohort.svg" color="#ffffff" />
-    <link rel="preload" as="image" href="/assets/CELIA.svg" />
     <link rel="preload" as="image" href="/assets/SIDELOAD.svg" />
-    <link rel="preload" as="image" href="/assets/badges/feather.svg" />
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="preload" as="image" href="/assets/platforms/feather.webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="/assets/platforms/altstore.webp" />
+    <link rel="preload" as="image" href="/assets/platforms/sidestore.webp" />
   </head>
   <body>
-    <main class="landing" aria-labelledby="site-title">
-      <section class="hero" aria-label="CELIA Source">
-        <div class="brand-lockup">
-          <h1 id="site-title" class="visually-hidden">CELIA Sideload</h1>
-          <div class="brand-lockup__wordmark" aria-hidden="true">
-            <img
-              class="brand-lockup__celia"
-              src="/assets/CELIA.svg"
-              alt=""
-              width="253"
-              height="69"
-            />
-            <img
-              class="brand-lockup__sideload"
-              src="/assets/SIDELOAD.svg"
-              alt=""
-              width="452"
-              height="70"
-            />
-          </div>
-          <div
-            class="brand-lockup__timer"
-            role="presentation"
-            aria-hidden="true"
-          >
-            <span></span>
-          </div>
-          <p class="visually-hidden">
-            The progress bar marks the interval between badge changes. Choose a
-            badge to add CELIA Source to your sideloading app.
-          </p>
-        </div>
-
-        <div
-          class="badge-carousel"
-          role="region"
-          aria-label="Add CELIA Source"
-        >
-          <a
-            class="platform-badge platform-badge--feather"
-            href="feather://source/https://sideload.celia.sh/source.json"
-            aria-label="Add CELIA Source to Feather"
-          >
-            <img
-              src="/assets/badges/feather.svg"
-              alt="Get it on Feather"
-              width="1001"
-              height="301"
-            />
-          </a>
-          <a
-            class="platform-badge platform-badge--altstore"
-            href="altstore://source?url=https%3A%2F%2Fsideload.celia.sh%2Fsource.json"
-            aria-label="Add CELIA Source to AltStore"
-          >
-            <img
-              src="/assets/badges/altstore.svg"
-              alt="Get it on AltStore"
-              width="1001"
-              height="301"
-            />
-          </a>
-          <a
-            class="platform-badge platform-badge--sidestore"
-            href="sidestore://source?url=https%3A%2F%2Fsideload.celia.sh%2Fsource.json"
-            aria-label="Add CELIA Source to SideStore"
-          >
-            <img
-              src="/assets/badges/sidestore.svg"
-              alt="Get it on SideStore"
-              width="1001"
-              height="301"
-            />
-          </a>
-        </div>
-
-        <p class="visually-hidden">
-          CELIA Source provides apps from the celia-sh organization.
-          If the badge does not open an app, use the source URL:
-          https://sideload.celia.sh/source.json
+    <div id="root"></div>
+    <noscript>
+      <main style="font-family: -apple-system, sans-serif; padding: 48px 24px; line-height: 1.6">
+        <h1>CELIA Source</h1>
+        <p>A source for apps by celia-sh.</p>
+        <p>
+          <a href="feather://source/https://sideload.celia.sh/source.json">Add to Feather</a> ·
+          <a href="altstore://source?url=https%3A%2F%2Fsideload.celia.sh%2Fsource.json">Add to AltStore</a> ·
+          <a href="sidestore://source?url=https%3A%2F%2Fsideload.celia.sh%2Fsource.json">Add to SideStore</a>
         </p>
-      </section>
-    </main>
+        <p>Source URL: https://sideload.celia.sh/source.json</p>
+      </main>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
