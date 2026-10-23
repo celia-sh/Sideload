@@ -59,7 +59,10 @@ for (const app of source.apps) {
   const releases = await github(`/repos/${repository}/releases?per_page=20`);
   const release = releaseWithIpa(releases);
   if (!release) {
-    throw new Error(`No stable IPA release found for ${repository}`);
+    // The releases API occasionally returns a list without the IPA; keep the
+    // published version rather than failing the whole deploy.
+    console.warn(`${app.name}: no stable IPA release found for ${repository}, keeping current entry`);
+    continue;
   }
 
   const ipa = release.assets.find((asset) => /\.ipa$/i.test(asset.name));
