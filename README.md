@@ -9,9 +9,9 @@
 ## 开发
 
 ```bash
-npm install
-npm run dev
-npm run build
+pnpm install
+pnpm dev
+pnpm build
 ```
 
-Cloudflare Pages 使用 `npm run build`，输出目录为 `dist`。GitHub Actions 每 12 小时检查上游 Release；检测到新 IPA 后更新 `public/source.json` 并部署。
+Cloudflare Pages 使用 `pnpm build`，输出目录为 `dist`。GitHub Actions 每 12 小时检查上游 Release；检测到新 IPA 后更新 `public/source.json` 并部署。

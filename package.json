@@ -20,5 +20,6 @@
   "dependencies": {
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
-  }
+  },
+  "packageManager": "pnpm@12.14.0"
 }
