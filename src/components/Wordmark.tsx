@@ -11,7 +11,7 @@ const SLASH_LINE = { x1: 169.3, y1: 71.4, x2: 197.9, y2: -1.4 };
  * baselines coincide. Stacked, the round C (x 0) and S (x 0.26) share one
  * optical left edge.
  */
-const ROW = { x: 311, y: 68.06 - 69, viewBox: "0 0 762 70" };
+const ROW = { x: 308.65, y: 68.06 - 69, viewBox: "0 0 759.65 70" };
 const STACK = { x: -0.26, y: 68.06 + 30 - 2.95, viewBox: "0 0 451 167" };
 
 const QUERY = "(max-width: 1080px)";
